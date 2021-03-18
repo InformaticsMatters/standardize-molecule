@@ -1,2 +1,0 @@
-standardize_smiles
-tests
