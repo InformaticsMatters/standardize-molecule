@@ -1,0 +1,43 @@
+---
+name: build
+
+# -----------------
+# Control variables (GitHub Secrets)
+# -----------------
+#
+# At the GitHub 'organisation' or 'project' level you must have the following
+# GitHub 'Repository Secrets' defined (i.e. via 'Settings -> Secrets'): -
+#
+# (none)
+#
+# -----------
+# Environment (GitHub Environments)
+# -----------
+#
+# Environment         (none)
+
+on:
+- push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version:
+        - '3.9'
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: Install requirements
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r package-requirements.txt
+    - name: Build
+      run: |
+        pyroma .
+        python setup.py bdist_wheel

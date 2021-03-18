@@ -5,7 +5,7 @@
 #
 # March 2021
 
-import platform
+import os
 from setuptools import setup, find_packages
 
 
@@ -41,7 +41,8 @@ setup(
         'Intended Audience :: Healthcare Industry',
         'Intended Audience :: Science/Research',
         'License :: OSI Approved :: MIT License',
-        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
         'Topic :: Scientific/Engineering :: Medical Science Apps.',
         'Topic :: Scientific/Engineering :: Bio-Informatics',
         'Topic :: Scientific/Engineering :: Chemistry',

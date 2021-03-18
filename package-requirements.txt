@@ -1,0 +1,10 @@
+# A requirements file used by our Travis CI/CD process
+# to test and package the utilities. Refer to src/python/setup.py
+# for the module's runtime requirements.
+
+# For testing...
+pylint == 2.7.2
+pyroma == 3.1
+
+# In order to run 'python setup.py bdist_wheel'...
+wheel == 0.36.2
