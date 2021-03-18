@@ -1,6 +1,6 @@
 Informatics Matters Standardize Molecule Utility
 ================================================
-The ``im-standardize_molecule`` module is a utility provided by `Informatics Matters`_.
+The ``im-standardize-molecule`` module is a utility provided by `Informatics Matters`_.
 
 It contains a Python module to:
 1. Take an original SMILES (*Simple Molecule Input Line rESpresentation*) and

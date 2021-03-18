@@ -1,6 +1,12 @@
 # Informatics Matters Standardize Molecule Utility
 
-The *im-standardize_molecule* module is a utility provided by Informatics Matters
+[![build](https://github.com/InformaticsMatters/standardize-molecule/actions/workflows/build.yaml/badge.svg)](https://github.com/InformaticsMatters/standardize-molecule/actions/workflows/build.yaml)
+[![publish](https://github.com/InformaticsMatters/standardize-molecule/actions/workflows/publish.yaml/badge.svg)](https://github.com/InformaticsMatters/standardize-molecule/actions/workflows/publish.yaml)
+
+[![PyPI version](https://badge.fury.io/py/im-standardize-molecule.svg)](https://badge.fury.io/py/im-standardize-molecule)
+![PyPI - License](https://img.shields.io/pypi/l/im-standardize-molecule)
+
+The *im-standardize-molecule* module is a utility provided by Informatics Matters
 
 It contains a Python module to:
 1. Take an original SMILES (*Simple Molecule Input Line rESpresentation*) and
