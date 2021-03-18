@@ -69,7 +69,7 @@ def standardize_format(mol):
     return mol
 
 
-def standardize_molecule(mol, osmiles):
+def standardize_molecule(mol, osmiles = 'NotProvided'):
     """Standardise a RDKit mol object. A SMILES string that represents the
     molecule can also be passed in to allow better logging of errors.
 

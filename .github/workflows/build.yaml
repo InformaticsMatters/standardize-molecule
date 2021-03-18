@@ -40,5 +40,5 @@ jobs:
     - name: Build
       run: |
         pyroma .
-        pylint standardize_smiles.py
+        pylint standardize_molecule.py
         python setup.py bdist_wheel

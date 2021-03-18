@@ -43,7 +43,7 @@ jobs:
     - name: Build
       run: |
         pyroma .
-        pylint standardize_smiles.py
+        pylint standardize_molecule.py
         python setup.py bdist_wheel
     - name: Publish
       uses: pypa/gh-action-pypi-publish@release/v1

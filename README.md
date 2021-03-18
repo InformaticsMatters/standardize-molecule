@@ -1,29 +1,15 @@
-Informatics Matters Standardize Molecule Utility
-================================================
-The ``im-standardize_molecule`` module is a utility provided by `Informatics Matters`_.
+# Informatics Matters Standardize Molecule Utility
+
+The *im-standardize_molecule* module is a utility provided by Informatics Matters
 
 It contains a Python module to:
 1. Take an original SMILES (*Simple Molecule Input Line rESpresentation*) and
 convert it to an Isomeric or Nonisomeric canonical SMILES representation in a consistent way.
 2. Convert an *rdkit.Chem.rdchem.Mol* object to a standard format.
 
+For installation and testing, see the associated README.rst file.
 
-Preparation
------------
-Note that although this module is available on PyPI, it is not possible to
-simply install it and run it. The module is strongly dependent on `RDKit`_.
-In most cases, one of the the Informatics Matters RDKit container images can be used.
-More details can be found here: `IM-RDKit`_
-RDKit can also be installed with `Conda`_.
-
-Testing
--------
-To check installation is successful, from within an RDKit environment, run::
-
-    python -m unittest test.test
-
-Usage
------
+## Usage
 
 **standardize_to_noniso_smiles** *(osmiles:str)*
 
@@ -65,8 +51,3 @@ Example::
     print(noniso[1].GetNumHeavyAtoms())
     13
 
-
-.. _Informatics Matters: http://www.informaticsmatters.com
-.. _RDKit: https://www.rdkit.org/docs/index.html
-.. _IM-RDKit: https://github.com/InformaticsMatters/docker-rdkit/blob/master/README.md
-.. _Conda: https://www.rdkit.org/docs/Install.html#how-to-install-rdkit-with-conda

@@ -28,7 +28,7 @@ setup(
 
     # Our modules to package
     packages=find_packages(exclude=['*.test', '*.test.*', 'test.*', 'test']),
-    py_modules=['standardize_smiles'],
+    py_modules=['standardize_molecule'],
 
     # Supported Python versions
     python_requires='>=3, <4',
