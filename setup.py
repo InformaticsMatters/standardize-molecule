@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-# Setup module for the Python-based Jenkins Utilities.
+# Setup module for the SMILES Utilities.
 #
 # March 2021
 
@@ -16,12 +16,12 @@ def get_long_description():
 setup(
 
     name='im-standardize-smiles',
-    version='0.0.1',
-    author='Alan Christie',
-    author_email='achristie@informaticsmatters.com',
-    url='https://github.com/InformaticsMatters/jenkins-utils',
-    license='Copyright (C) 2021 Informatics Matters Ltd. All rights reserved.',
-    description='Utilities for Informatics Matters CI/CD configuration',
+    version=os.environ.get('GITHUB_REF_SLUG', '0.0.1'),
+    author='Duncan Peacock',
+    author_email='dpeacock@informaticsmatters.com',
+    url='https://github.com/InformaticsMatters/standardize-smiles',
+    license='GPLv3 License',
+    description='Utilities for Molecular Science',
     long_description=get_long_description(),
     keywords='smiles, rdkit',
     platforms=['any'],
@@ -38,10 +38,13 @@ setup(
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Environment :: Console',
-        'Intended Audience :: Developers',
+        'Intended Audience :: Healthcare Industry',
+        'Intended Audience :: Science/Research',
         'License :: OSI Approved :: MIT License',
-        'Programming Language :: Python :: 3.8',
-        'Topic :: Software Development :: Build Tools',
+        'Programming Language :: Python :: 3',
+        'Topic :: Scientific/Engineering :: Medical Science Apps.',
+        'Topic :: Scientific/Engineering :: Bio-Informatics',
+        'Topic :: Scientific/Engineering :: Chemistry',
     ],
 
     zip_safe=False,
