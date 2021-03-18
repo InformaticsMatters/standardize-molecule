@@ -19,7 +19,7 @@ setup(
     version=os.environ.get('GITHUB_REF_SLUG', '0.0.1'),
     author='Duncan Peacock',
     author_email='dpeacock@informaticsmatters.com',
-    url='https://github.com/InformaticsMatters/standardize-smiles',
+    url='https://github.com/InformaticsMatters/standardize-molecule',
     license='GPLv3 License',
     description='Utilities for Molecular Science',
     long_description=get_long_description(),

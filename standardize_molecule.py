@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding=utf-8
 
-"""standardize_smiles.py
+"""standardize_molecule.py
 
 Utility to standardize an input smiles into the standard representation
 used in the fragment network.
