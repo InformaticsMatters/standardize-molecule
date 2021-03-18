@@ -15,7 +15,7 @@ def get_long_description():
 
 setup(
 
-    name='im-standardize-smiles',
+    name='im-standardize-molecule',
     version=os.environ.get('GITHUB_REF_SLUG', '0.0.1'),
     author='Duncan Peacock',
     author_email='dpeacock@informaticsmatters.com',
