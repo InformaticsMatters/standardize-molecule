@@ -1,6 +1,6 @@
-Informatics Matters Standardize_smiles Utility
+Informatics Matters Standardize SMILES Utility
 ==============================================
-The ``Standardize_smiles`` module is a utility provided by `Informatics Matters`_.
+The ``im-standardize_smiles`` module is a utility provided by `Informatics Matters`_.
 It contains a Python module to take an original SMILES (*Simple Molecule Input Line rESpresentation*) and
 translate it to an Isomeric or Nonisomeric cononical SMILES representation in a consistent way.
 
@@ -13,10 +13,9 @@ More details can be found here: `IM-RDKit`_
 
 Testing
 -------
-
 To check installation is successful, from within an RDKit environment, run::
 
-    python -m unittest test
+    python -m unittest test.test
 
 .. _Informatics Matters: http://www.informaticsmatters.com
 .. _RDKit: https://www.rdkit.org/docs/index.html
